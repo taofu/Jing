@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#393939"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ff000000" />
+
+        <LinearLayout
+            android:id="@+id/left_menu_user_head_info"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@color/left_menu_itme_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <ImageView
+                android:id="@+id/user_head_info_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/user_head_info_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_head_info_listen_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="已经收听了1000小时35分钟"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_menu_parent"
+            android:orientation="vertical"
+             >
+            
+            <TextView
+                android:id="@+id/left_menu_explore"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_spotlight"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_explore" />
+
+            <TextView
+                android:id="@+id/left_menu_i_like"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_ilike"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_i_like" />
+
+            <TextView
+                android:id="@+id/left_menu_message"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_spotlight"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_message" />
+
+            <TextView
+                android:id="@+id/left_menu_local_cache"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_local"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_local_cache" />
+
+            <TextView
+                android:id="@+id/left_menu_may_like"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_genius"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_may_like" />
+
+            <TextView
+                android:id="@+id/left_menu_otherPerson_listen"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_ticker"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_otherPerson_listen" />
+
+            <TextView
+                android:id="@+id/left_menu_setting"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_settings"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_setting" />
+
+            <TextView
+                android:id="@+id/left_menu_close"
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_logout"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_close" />
+            <TextView
+                style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_logout"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_close" />
+            <TextView
+                 style="@style/left_menu_item_text"
+                android:drawableLeft="@drawable/menu_logout"
+                android:gravity="center_vertical"
+                android:text="@string/left_menu_close" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

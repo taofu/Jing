@@ -1,37 +1,74 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent" >
 
-  
-   
-        <LinearLayout
-            android:id="@+id/left_tools_view"
+    <com.fm.jing.view.LeftMenuView
+        android:id="@+id/leftMenuView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        
+          <ListView
+            android:id="@+id/left_list"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="fill_parent" >
+        </ListView>
+        
+
+         <include layout="@layout/left_menu_items_view" /> 
+        <ImageView 
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="horizontal"
-            android:background="@drawable/left"
-            ></LinearLayout> 
-	
-        <com.fm.jing.view.TouchScorllerView 
-            android:id="@+id/touchSrollerView"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            >
-           <RelativeLayout 
+            android:background="#fff"
+            android:visibility="gone"
+            />
+    </com.fm.jing.view.LeftMenuView>
+
+    <LinearLayout
+        android:id="@+id/left_tools_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <com.fm.jing.view.TouchScorllerView
+        android:id="@+id/touchSrollerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+		
+        <View
+            android:id="@+id/left_shadow"
+	        android:layout_width="10dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/center_view_shadow_left" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#393939" >
+            <LinearLayout
+                android:id="@+id/title"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/right"
-                >
-           
-            <Button 
-                android:id="@+id/scroll"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Scroll"
-                />
-            </RelativeLayout> 
-        </com.fm.jing.view.TouchScorllerView>
+                android:layout_height="45dp"
+                android:background="#FF232323"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_btn" />
+            </LinearLayout>
+			<FrameLayout
+			    android:layout_below="@+id/title" 
+			    android:id="@+id/fragment_container"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    ></FrameLayout>
+        </RelativeLayout>
+    </com.fm.jing.view.TouchScorllerView>
 
 </RelativeLayout>

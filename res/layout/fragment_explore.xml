@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    	
+    
+    <com.fm.jing.view.FragmentContainer
+        android:id="@+id/fragment_child_container_explore" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll"
+        ></com.fm.jing.view.FragmentContainer>	
+    
+    <LinearLayout 
+        android:background="@color/left_menu_itme_bg"
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+    <TextView 
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Like frament"
+        android:textSize="20sp"
+        android:textColor="#ff000000"
+        />
+    <Button 
+        android:id="@+id/start_next_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start_Next"
+        />
+</LinearLayout>
+</RelativeLayout>

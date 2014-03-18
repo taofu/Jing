@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<color name="left_menu_itme_bg">#1e1e1e</color>
+    	<color name="left_menu_itme_separator">#FFa7acaf</color>
+</resources>
